@@ -1,0 +1,210 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  max-width: 900px; /* Increased width for better layout */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.2em; /* Slightly larger */
+}
+
+main {
+  background-color: #fff;
+  padding: 25px; /* Increased padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px; /* Space between sections */
+}
+
+/* Job Submission Form Styles */
+.job-submission-form h2 {
+  margin-top: 0;
+  color: #0056b3; /* Darker blue */
+  border-bottom: 2px solid #e9ecef; /* Lighter border */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.job-submission-form div {
+  margin-bottom: 15px;
+}
+
+.job-submission-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057; /* Darker grey */
+}
+
+.job-submission-form input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ced4da; /* Standard bootstrap-like border */
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.job-submission-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-submission-form button:hover {
+  background-color: #218838;
+}
+
+/* Message Styles (for submit success/error) */
+.message {
+  margin-top: 20px;
+  padding: 12px 15px; /* More padding */
+  border-radius: 4px;
+  font-weight: 500; /* Slightly less bold */
+  border: 1px solid transparent;
+}
+
+.message:empty {
+  display: none;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+
+/* Job Status Display Styles */
+.job-status-display h2 {
+  margin-top: 0;
+  color: #0056b3;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.job-status-display button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.job-status-display button:hover {
+  background-color: #0056b3;
+}
+
+.job-status-display button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.queue-info {
+  background-color: #f8f9fa; /* Light grey background for each queue */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6; /* Slightly darker border */
+}
+
+.queue-info h3 {
+  margin-top: 0;
+  color: #343a40; /* Dark grey for queue name */
+  font-size: 1.3em;
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.queue-info h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #495057;
+  font-size: 1.1em;
+}
+
+
+.queue-info p {
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.job-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.job-item {
+  background-color: #ffffff; /* White background for items */
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.job-item p {
+  margin: 6px 0; /* Tighter spacing */
+  font-size: 0.9em;
+}
+
+.job-item strong {
+  color: #007bff; /* Highlight labels */
+  min-width: 80px; /* Align labels somewhat */
+  display: inline-block;
+}
+
+.task-state {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px; /* Pill shape */
+  font-size: 0.85em;
+  color: white;
+  text-transform: capitalize;
+}
+
+.task-state.active { background-color: #ffc107; color: #333; } /* Amber */
+.task-state.pending { background-color: #17a2b8; } /* Info Blue */
+.task-state.completed { background-color: #28a745; } /* Green */
+.task-state.retry { background-color: #fd7e14; } /* Orange */
+.task-state.archived { background-color: #6c757d; } /* Grey */
+.task-state.failed { background-color: #dc3545; } /* Red */
