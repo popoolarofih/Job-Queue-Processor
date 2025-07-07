@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Frontend node_modules (these are installed during build)
+frontend/node_modules
+
+# Go build artifacts (if any locally)
+*.exe
+*.out
+
+# IDE specific
+.idea
+.vscode
+
+# OS specific
+.DS_Store
+Thumbs.db
